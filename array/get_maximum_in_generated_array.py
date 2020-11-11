@@ -47,8 +47,32 @@ Constraints:
 
 class Solution:
     def getMaximumGenerated(self, n: int) -> int:
-      return
+
+      if n == 0:
+        return 0
+      elif n == 1:
+        return 1
+      elif n >= 2 and n <= 100:
+        temp = [0] * (n+1)
+        temp[0] = 0
+        temp[1] = 1
+
+      for i in range(2, n+1):
+        d = i // 2 # 몫
+        r = i % 2  # 나머지
+
+        if r == 0:
+          temp[i] = temp[d]
+        else:
+          temp[i] = temp[d] + temp[d+1]
+
+      return max(temp)
 
 
-
-print("test")
+if __name__ == "__main__":
+  solution = Solution()
+  print(solution.getMaximumGenerated(0))
+  print(solution.getMaximumGenerated(1))
+  print(solution.getMaximumGenerated(2))
+  print(solution.getMaximumGenerated(3))
+  print(solution.getMaximumGenerated(7))
