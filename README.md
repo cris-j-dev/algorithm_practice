@@ -8,6 +8,7 @@
 | 2   | Sell Diminishing-Valued Colored Balls | greedy | [LeetCode](https://leetcode.com/contest/weekly-contest-214/problems/sell-diminishing-valued-colored-balls/) | [A](greedy/sell_diminishing-valued_colored_balls.py) | 120m |
 | 3   | Create Sorted Array through Instructions | tree | [LeetCode](https://leetcode.com/problems/create-sorted-array-through-instructions/) | [A](tree/create_sorted_array_through_instructions.py) | x |
 | 4   | Check If Two String Arrays are Equivalent | string | [LeetCode](https://leetcode.com/contest/weekly-contest-216/problems/check-if-two-string-arrays-are-equivalent/) | [A](string/check_if_two_string_arrays_are_equivalent.py) | 4m |
+| 5   | Smallest String With A Given Numeric Value | greedy | [LeetCode](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/) | [A](greedy/smallest_string_with_a_given_numeric_value.py) | 10m |
 
 m: Time spent solving alone
 
