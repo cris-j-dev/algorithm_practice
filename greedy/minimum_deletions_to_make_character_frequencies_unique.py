@@ -37,25 +37,25 @@ s contains only lowercase English letters.
 
 class Solution:
   def minDeletions(self, s: str) -> int:
-    temp = {}
+    count = {}
     for i in s:
-      if i in temp.keys():
-        temp[i] += 1
+      if i in count.keys():
+        count[i] += 1
       else:
-        temp[i] = 1
-    temp_value = sorted(temp.values(), reverse=True)
+        count[i] = 1
+    count_value = sorted(count.values(), reverse=True)
 
     ret = 0
-    for i in range(1, len(temp_value)):
-      if temp_value[i-1] == 0:
-        ret = ret + temp_value[i]
-        temp_value[i] = 0
-      elif temp_value[i-1] == temp_value[i]:
-        temp_value[i] -= 1
+    for i in range(1, len(count_value)):
+      if count_value[i-1] == 0:
+        ret = ret + count_value[i]
+        count_value[i] = 0
+      elif count_value[i-1] == count_value[i]:
+        count_value[i] -= 1
         ret = ret + 1
-      elif temp_value[i-1] < temp_value[i]:
-        ret = ret + temp_value[i] - temp_value[i-1] + 1
-        temp_value[i] = temp_value[i-1] - 1
+      elif count_value[i-1] < count_value[i]:
+        ret = ret + count_value[i] - count_value[i-1] + 1
+        count_value[i] = count_value[i-1] - 1
 
     return ret
         

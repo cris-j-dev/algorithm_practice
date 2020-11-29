@@ -37,9 +37,9 @@ Explanation: Sell the 1st color 1000000000 times for a total value of 5000000005
 
 Constraints:
 
-1 <= inventory.length <= 105
-1 <= inventory[i] <= 109
-1 <= orders <= min(sum(inventory[i]), 109)
+1 <= inventory.length <= 10^5
+1 <= inventory[i] <= 10^9
+1 <= orders <= min(sum(inventory[i]), 10^9)
 
 """
 from typing import List
@@ -50,22 +50,23 @@ class Solution:
     sorted_inventory = sorted(inventory, reverse=True)
     sorted_inventory += [0]
 
-    res = 0
+    ret = 0
     ball_count = 1
     for i in range(1, len(sorted_inventory)):
       diff = sorted_inventory[i-1] - sorted_inventory[i]
       if diff > 0:
         count = ball_count * diff 
         if count < orders:
-          res += ball_count * (sorted_inventory[i-1] + sorted_inventory[i] + 1) * (sorted_inventory[i-1] - sorted_inventory[i]) // 2
+          ret += ball_count * (sorted_inventory[i-1] + sorted_inventory[i] + 1) * (sorted_inventory[i-1] - sorted_inventory[i]) // 2
           orders -= count
 
         else:
           quotient = orders // ball_count
           remainder = orders % ball_count
-          res += ball_count * (2 * sorted_inventory[i-1] - quotient + 1) * quotient // 2 + remainder * (sorted_inventory[i-1] - quotient)
-          return res % MOD
+          ret += ball_count * (2 * sorted_inventory[i-1] - quotient + 1) * quotient // 2 + remainder * (sorted_inventory[i-1] - quotient)
       ball_count += 1
+
+    return ret % MOD
 
 
 if __name__ == "__main__":

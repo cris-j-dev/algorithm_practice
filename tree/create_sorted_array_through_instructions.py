@@ -79,7 +79,6 @@ class Solution:
       first = index 
       second = len(temp) - index - same
         
-      # print("(", first, ", ", second, ")")
       if first <= second:
         sum += first
       else:
