@@ -9,6 +9,7 @@
 | 3   | Create Sorted Array through Instructions | tree | [LeetCode](https://leetcode.com/problems/create-sorted-array-through-instructions/) | [A](tree/create_sorted_array_through_instructions.py) | x |
 | 4   | Check If Two String Arrays are Equivalent | string | [LeetCode](https://leetcode.com/contest/weekly-contest-216/problems/check-if-two-string-arrays-are-equivalent/) | [A](string/check_if_two_string_arrays_are_equivalent.py) | 4m |
 | 5   | Smallest String With A Given Numeric Value | greedy | [LeetCode](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/) | [A](greedy/smallest_string_with_a_given_numeric_value.py) | 10m |
+| 6   | Ways to Make a Fair Array | greedy | [LeetCode](https://leetcode.com/problems/ways-to-make-a-fair-array/) | [A](greedy/ways_to_make_a_fair_array.py) | 25m |
 
 m: Time spent solving alone
 
