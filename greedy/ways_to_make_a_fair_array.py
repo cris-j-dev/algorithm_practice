@@ -45,29 +45,27 @@ Constraints:
 
 from typing import List
 class Solution:
-    def waysToMakeFair(self, nums: List[int]) -> int:
-        odd = even = 0
-        even = sum(nums[::2])
-        odd = sum(nums[1::2])
+  def waysToMakeFair(self, nums: List[int]) -> int:
+    odd = even = 0
+    even = sum(nums[::2])
+    odd = sum(nums[1::2])
 
-        prev_odd = prev_even = 0
-        count = 0
-        for i in range(len(nums)):
-            if i % 2 == 1:
-                curr_even = odd - prev_odd - nums[i] + prev_even
-                curr_odd = even - prev_even + prev_odd
-                prev_odd += nums[i]
-            else:
-                curr_even = prev_even+odd-prev_odd
-                curr_odd = prev_odd+even-nums[i]-prev_even
-                prev_even += nums[i]
-            if curr_even == curr_odd:
-                count += 1
+    prev_odd = prev_even = 0
+    count = 0
+    # [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+    for i in range(len(nums)):
+      if i % 2 == 1:
+        curr_even = odd - prev_odd - nums[i] + prev_even
+        curr_odd = even - prev_even + prev_odd
+        prev_odd += nums[i]
+      else:
+        curr_even = odd + prev_even - prev_odd
+        curr_odd = even + prev_odd - nums[i] - prev_even
+        prev_even += nums[i]
+      if curr_even == curr_odd:
+        count += 1
 
-            print(curr_even)
-            print(curr_odd)
-            print("=====================")
-        return count
+    return count
 if __name__ == "__main__":
   solution = Solution()
   # print(solution.waysToMakeFair(nums=[2,1,6,4])) # 1
