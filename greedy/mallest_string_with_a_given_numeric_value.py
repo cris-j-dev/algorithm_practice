@@ -29,14 +29,11 @@ Constraints:
 n <= k <= 26 * n
 """
 
-
 class Solution:
   def getSmallestString(self, n: int, k: int) -> str:
 
     temp = ['a'] * n
     q, r = divmod(k-n, 25)
-    print(q)
-    print(r)
 
     for i in range(q):
       temp[-(i+1)] = chr(ord(temp[-(i+1)]) + 25)
