@@ -11,6 +11,7 @@
 | 5   | Smallest String With A Given Numeric Value | greedy | [LeetCode](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/) | [A](greedy/smallest_string_with_a_given_numeric_value.py) | 10m |
 | 6   | Ways to Make a Fair Array | greedy | [LeetCode](https://leetcode.com/problems/ways-to-make-a-fair-array/) | [A](greedy/ways_to_make_a_fair_array.py) | 25m |
 | 7   | Richest Customer Wealth | array | [LeetCode](https://leetcode.com/problems/richest-customer-wealth/) | [A](array/richest_customer_wealth.py) | 10m |
+| 8   | Find the Most Competitive Subsequence | stack | [LeetCode](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [A](stack/find_the_most_competitve_subsequence.py) | 45m | 
 
 m: Time spent solving alone
 
