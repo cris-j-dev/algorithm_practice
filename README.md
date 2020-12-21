@@ -13,7 +13,7 @@
 | 7   | Richest Customer Wealth | array | [LeetCode](https://leetcode.com/problems/richest-customer-wealth/) | [A](array/richest_customer_wealth.py) | 10m |
 | 8   | Find the Most Competitive Subsequence | stack | [LeetCode](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [A](stack/find_the_most_competitve_subsequence.py) | 45m | 
 | 9   | Count of Matches in Tournament | backtracking | [LeetCode](https://leetcode.com/contest/weekly-contest-219/problems/count-of-matches-in-tournament/) | [A](backtracking/count_of_matches_in_tournament.py) | 5m | 
-| 10   | Partitioning Into Minimum Number Of Deci-Binary Numbers | greedy | [LeetCode](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | [A](greedy/partitioning_into_minimum_number_of_deci-binary_numbers.py) | 5m | 
+| 10   | Partitioning Into Minimum Number Of Deci-Binary Numbers | greedy | [LeetCode](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | [A](greedy/partitioning_into_minimum_number_of_deci-binary_numbers.py) | 2m | 
 
 m: Time spent solving alone
 
