@@ -18,6 +18,7 @@
 | 12   | Binary Search | binary_search | [LeetCode](https://leetcode.com/problems/binary-search/) | [A](binary_search/binary_search.py) | 13m | 
 | 13   | Guess Number Higher or Lower | binary_search | [LeetCode](https://leetcode.com/problems/guess-number-higher-or-lower/) | [A](binary_search/guess_number_higher_or_lower.py) | 19m | 
 | 14   | Contains Duplicate | hash_table | [LeetCode](https://leetcode.com/problems/contains-duplicate/) | [A](hash_table/contains_duplicate.py) | 4m | 
+| 15   | Reorder Data in Log Files | sorting | [LeetCode](https://leetcode.com/problems/reorder-data-in-log-files/) | [A](sorting/reorder_data_in_log_files.py) |  | 
 
 m: Time spent solving alone
 
