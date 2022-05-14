@@ -32,6 +32,7 @@ strs[i] consists of lowercase English letters.
 """
 
 from typing import List
+import collections
 
 
 class Solution:
@@ -46,11 +47,27 @@ class Solution:
 
         return hash_table.values()
 
+    def groupAnagrams2(self, strs: List[str]) -> List[List[str]]:
+        anagrams = collections.defaultdict(list)
+
+        for word in strs:
+            anagrams["".join(sorted(word))].append(word)
+        return list(anagrams.values())
+
 
 if __name__ == "__main__":
     solution = Solution()
+    import time
+
+    start = time.time()
     print(
         solution.groupAnagrams(strs=["eat", "tea", "tan", "ate", "nat", "bat"])
     )  # [["bat"],["nat","tan"],["ate","eat","tea"]]
-    print(solution.groupAnagrams(strs=[""]))  # [[""]]
-    print(solution.groupAnagrams(strs=["a"]))  # [["a"]]
+    print(time.time() - start)
+    start = time.time()
+    print(
+        solution.groupAnagrams2(strs=["eat", "tea", "tan", "ate", "nat", "bat"])
+    )  # [["bat"],["nat","tan"],["ate","eat","tea"]]
+    print(time.time() - start)
+    # print(solution.groupAnagrams(strs=[""]))  # [[""]]
+    # print(solution.groupAnagrams(strs=["a"]))  # [["a"]]
