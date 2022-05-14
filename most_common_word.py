@@ -34,7 +34,7 @@ banned[i] consists of only lowercase English letters.
 """
 
 
-from typing import List, OrderedDict
+from typing import List
 import re
 
 
@@ -42,7 +42,7 @@ class Solution:
     def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
         paragraph = re.sub(r"[^a-zA-Z0-9 ]", " ", paragraph)
 
-        hash_table = OrderedDict()
+        hash_table = {}
         max_word = None
         max_value = 0
         for word in paragraph.split():
