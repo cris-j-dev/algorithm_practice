@@ -20,7 +20,7 @@
 | 15  | Contains Duplicate | 217 | [LeetCode](https://leetcode.com/problems/contains-duplicate/) | [A](contains_duplicate.py) | array, hash table, sorting | Easy | 4m | 
 | 16  | Reorder Data in Log Files | 937 | [LeetCode](https://leetcode.com/problems/reorder-data-in-log-files/) | [A](reorder_data_in_log_files.py) | Easy | array, string, sorting | 47m | 
 | 17  | Most Common Word | 819 | [LeetCode](https://leetcode.com/problems/most-common-word/) | [A](most_common_word.py) | Easy | hash table, string, counting | 23m | 
-| 18  |  | 819 | [LeetCode](https://leetcode.com/problems/group-anagrams/) | [A](group_anagrams.py) | hash table, string, sorting | m | 
+| 18  | Group Anagrams | 49 | [LeetCode](https://leetcode.com/problems/group-anagrams/) | [A](group_anagrams.py) | Medium | hash table, string, sorting | 11m | 
 
 m: Time spent solving alone
 

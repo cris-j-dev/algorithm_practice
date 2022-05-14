@@ -36,7 +36,15 @@ from typing import List
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        return
+        hash_table = {}
+        for word in strs:
+            new_word = "".join(sorted(word))
+            if new_word in hash_table.keys():
+                hash_table[new_word].append(word)
+            else:
+                hash_table[new_word] = [word]
+
+        return hash_table.values()
 
 
 if __name__ == "__main__":
