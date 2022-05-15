@@ -57,17 +57,11 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    import time
-
-    start = time.time()
     print(
         solution.groupAnagrams(strs=["eat", "tea", "tan", "ate", "nat", "bat"])
     )  # [["bat"],["nat","tan"],["ate","eat","tea"]]
-    print(time.time() - start)
-    start = time.time()
     print(
         solution.groupAnagrams2(strs=["eat", "tea", "tan", "ate", "nat", "bat"])
     )  # [["bat"],["nat","tan"],["ate","eat","tea"]]
-    print(time.time() - start)
     # print(solution.groupAnagrams(strs=[""]))  # [[""]]
     # print(solution.groupAnagrams(strs=["a"]))  # [["a"]]
