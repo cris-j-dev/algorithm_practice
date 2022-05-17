@@ -39,17 +39,26 @@ from typing import List
 
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum2(self, nums: List[int], target: int) -> List[int]:
 
         start = 0
         res = 0
         for num_idx in range(0, len(nums) + 1):
             start += 1
-            if nums[num_idx] < target:
-                for i in range(start, len(nums) + 1):
-                    res = nums[num_idx] + nums[i]
-                    if res == target:
-                        return [num_idx, i]
+            for i in range(start, len(nums)):
+                res = nums[num_idx] + nums[i]
+                if res == target:
+                    return [num_idx, i]
+
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        index_map = {}
+        for idx, num in enumerate(nums):
+            print("index_map : ", index_map)
+            rem = target - num
+            if rem in index_map:
+                return index_map[rem], idx
+            else:
+                index_map[num] = idx
 
 
 if __name__ == "__main__":
@@ -57,3 +66,5 @@ if __name__ == "__main__":
     print(solution.twoSum(nums=[2, 7, 11, 15], target=9))  # [0, 1]
     print(solution.twoSum(nums=[3, 2, 4], target=6))  # [1, 2]
     print(solution.twoSum(nums=[3, 3], target=6))  # [0, 1]
+    print(solution.twoSum(nums=[0, 4, 3, 0], target=0))  # [0, 3]
+    print(solution.twoSum(nums=[-1, -2, -3, -4, -5], target=-8))  # [2, 4]
