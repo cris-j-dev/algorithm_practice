@@ -22,7 +22,7 @@
 | 17  | Most Common Word | 819 | [LeetCode](https://leetcode.com/problems/most-common-word/) | [A](most_common_word.py) | Easy | hash table, string, counting | 23m | 
 | 18  | Group Anagrams | 49 | [LeetCode](https://leetcode.com/problems/group-anagrams/) | [A](group_anagrams.py) | Medium | hash table, string, sorting | 11m | 
 | 19  | Longest Palindromic Substring | 5 | [LeetCode](https://leetcode.com/problems/longest-palindromic-substring/) | [A](longest_palindromic_substring.py) | Medium | string, dp | x | 
-| 20  | Two Sum  | 1 | [LeetCode](https://leetcode.com/problems/two-sum/) | [A](two_sum.py) | Easy | array, hash table | x | 
+| 20  | Two Sum  | 1 | [LeetCode](https://leetcode.com/problems/two-sum/) | [A](two_sum.py) | Easy | array, hash table | 18m | 
 
 m: Time spent solving alone
 
